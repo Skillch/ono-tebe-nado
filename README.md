@@ -1,1 +1,1 @@
-https://github.com/Skillch/ono-tebe-nado
+https://github.com/Skillch/ono-tebe-nado.git
