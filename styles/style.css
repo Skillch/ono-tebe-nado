@@ -8,7 +8,8 @@ button {
 .header {
     display:flex;
     justify-content: space-between;  
-    padding:  92px 24px 96px 24px; 
+    padding: 92px 24px 96px 24px; 
+
 }
 
 .header__links-list {
@@ -264,7 +265,6 @@ color: #fff;
 .card-links {
  text-decoration: underline!important;
  margin: 27px 0 0 64px;
- text-decoration: solid;
  font-weight: 400;
  font-size: 20px;
  color: #000;
@@ -307,7 +307,8 @@ color: #fff;
  color: #000;
 }
 
-.about-description p {     
+.about-description p {    
+
  font-weight: 400;
  font-size: 20px;
  line-height: 24px;
@@ -386,6 +387,7 @@ color: #fff;
 }
 
 .footer__address span {
+    
  letter-spacing: 0.01em; 
  font-style: normal;
 }
