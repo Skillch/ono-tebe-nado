@@ -1,1 +1,393 @@
 /* место для вашего кода */
+button{
+    margin:0;
+    padding: 12px 32px 11px 31px;
+    text-transform: uppercase;
+}
+/* Начало блока Шапка */
+.header{
+    display:flex;
+    justify-content: space-between;  
+    padding:  92px 24px 96px 24px; 
+}
+
+.header__links-list{
+    display: flex;
+    flex-direction: row;
+    gap:31px;
+    list-style-type: circle;
+    padding-top: 48px;
+    padding-left: 26px;
+}
+
+.header__links-list-item{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    letter-spacing: 0.01em;
+    color: #000;
+}
+
+.header__link_active {
+    text-decoration: none;
+    list-style-type:none;
+}
+
+.header__logo{
+    display:block;
+    width:130px;
+    margin-right: 140px ;
+    margin-top: 10px ;
+}
+
+.header__address{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-right:63px;
+    padding-top:12px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: #000;
+}
+
+.header__address a{
+    letter-spacing: 0.01em; 
+    font-style: normal;
+}
+
+.header__address span{
+    letter-spacing: 0.01em; 
+    font-style: normal;
+}
+
+/* Конец блока Шапка */
+
+/* Начало блок cover */
+
+ .cover{
+    background-image:url("/images/cover.jpg");
+    height: 757px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin:0;
+    padding: 0;
+    margin-bottom: 179px ;
+    position: relative;
+}
+.cover .overlay{
+    background: #000;
+    opacity: 0.6;
+    height: 757px;  
+} 
+
+.cover__title{
+font-weight: 700;
+font-size: 100px;
+line-height: 115%;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+color: #fff;
+}
+
+.aligned-text{
+ position: absolute;
+ display: block;
+ top: 160px;
+ left:51px;
+}
+
+.aligned-text_center{
+ position: absolute;
+ display: block;
+ top: 287px;
+ left:337px;
+}
+
+.aligned-text_right{
+ position: absolute;
+ display: block;
+ top: 406px;
+ left:664px;
+}
+
+.letter-spacing-extended_top{
+ letter-spacing: 0;
+ position: absolute;
+ left: 240px;
+}
+
+.letter-spacing-extended_center{
+ letter-spacing: 0;
+ position: absolute;
+ left: 309px;
+}
+
+.letter-spacing-extended_right{
+ position: relative;
+ right: 30px;
+}
+
+.cover__description-text{
+ position:absolute;
+ left:78px;
+ bottom: 67px;
+ word-spacing: 20px;
+ line-height: 127%;
+ font-weight: 400;
+ font-size: 22px;
+ text-transform: uppercase;
+ color: #fff;
+}
+
+.cover__description-text_span2{
+ word-spacing: 18px;
+ line-height: 127%;
+ font-weight: 400;
+ font-size: 22px;
+ text-transform: uppercase;
+ color: #fff;
+}
+
+.bet-button{
+ position: absolute;
+ bottom:57px;
+ right:50px;
+ font-weight: 500;
+ font-size: 22px;
+ text-transform: uppercase;
+ text-align: center;
+ color: #fff;
+ background-color: transparent;
+ border: 1px solid #ffffff;
+ cursor: pointer;
+}
+
+/* Конец блок cover */
+
+/* Начало блок карточек */
+
+.lots{
+ min-height: 692px;
+ margin-bottom: 146px;
+}
+
+.lots h3{
+ position: relative;
+ bottom:5px ;
+ padding-left: 65px;
+ padding-bottom: 27px;
+ font-weight: 700;
+ font-size: 40px;
+ text-transform: uppercase;
+ color: #000;
+}
+
+.card-list{
+ padding-left: 24px;
+ padding-right: 24px;
+ display:flex;
+ gap: 25px;
+ list-style-type: none;    
+}
+    
+.card_overlay{
+ width: 334px;
+ height: 563px;
+ background: rgba(0, 0, 0, 0.6);
+}
+
+.lots a{
+ display: block;
+}
+
+.first{
+ background-image: url(/images/card-lot-01.jpg);
+ background-position: center;
+ background-size: cover;
+ width: 334px;
+ min-height: 563px;
+}
+.second{
+ background-image: url(/images/card-lot-02.jpg);
+ background-position: center;
+ background-size: cover;
+ width:334px;
+ min-height: 563px;
+}
+.third{
+ background-image: url(/images/card-lot-03.jpg);
+ background-position: center;
+ background-size: cover;
+ width:334px;
+ min-height: 563px;
+}
+
+.card-title{
+ display: flex;
+ padding: 49px 40px 0px 40px;
+ font-weight: 700;
+ font-size: 22px;
+ line-height: 120%;
+ text-transform: uppercase;
+ text-decoration: underline;
+ text-decoration-skip-ink: none;
+ color: #fff;
+}
+
+.card-description_first{
+ padding: 238px 40px 48px 40px;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 120%;
+ color: #fff;
+}
+
+.card-description_second{
+ padding: 0px 40px 48px 40px;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 120%;
+ color: #fff;
+}
+
+.card-description_third{
+ padding: 92px 40px 48px 40px;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 120%;
+ color: #fff;
+}
+
+.card-links{
+ text-decoration: underline!important;
+ margin: 27px 0 0 64px;
+ text-decoration: solid;
+ font-weight: 400;
+ font-size: 20px;
+ color: #000;
+}
+
+/* Конец блок карточек */
+
+/* Начало блок об аукционе */
+.about{
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+ margin-bottom: 180px;
+}
+
+.about__background{
+ width: 240px;
+ height: 240px;
+ display: flex;
+ justify-content: center;
+ align-items: center; 
+ border-radius: 50%;
+ background-color: #000; 
+}
+
+.about__img{
+ padding: 32px 72px 320px 71px;
+}
+
+.about__image{
+ width: 149px;
+ height: 114px;
+}
+
+.about-description h3{
+ margin-top:133px;
+ margin-bottom:100px;
+ font-weight: 700;
+ font-size: 40px;
+ text-transform: uppercase;
+ color: #000;
+}
+
+.about-description p{     
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 24px;
+ letter-spacing: 0.01em;
+ color: #000;
+}
+
+.about_paragraph_first{
+ padding-bottom: 25px;
+}
+ 
+/* Конец блок об аукционе */
+
+/* Начало блок подвал */
+
+.footer{
+ display:flex;
+ justify-content: space-between;  
+ padding:  0px 50px 88px 50px; 
+}
+
+.footer__links-list{
+ display: flex;
+ flex-direction: column;
+ list-style-type: none;
+ text-align:center;
+ margin-left: 41px;
+ margin-bottom: 0;
+ padding: 0; 
+}
+
+.footer__links-list-item{
+ font-weight: 400;
+ font-size: 18px;
+ text-align: center;
+ color: #000;
+}
+
+.footer__link_active {
+ text-decoration: none;
+ list-style-type:none;
+}
+
+.footer__social{
+ display:flex;
+ gap: 50px;
+ margin-top: 10px ;
+}
+
+.footer_social img{
+ width:48px;
+ height: 48px;
+}
+
+.social__first{
+ margin-right: 44px;
+}
+
+.social__second{
+ margin-right: 43px;
+}
+
+.footer__address{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ font-weight: 400;
+ font-size: 18px;
+ line-height: 135%;
+ color: #000;
+}
+
+.footer__address a{
+ letter-spacing: 0.01em; 
+ font-style: normal;
+}
+
+.footer__address span{
+ letter-spacing: 0.01em; 
+ font-style: normal;
+}
+
+/* Конец блок подвал */
