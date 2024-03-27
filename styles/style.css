@@ -10,7 +10,6 @@
 
 .header__links-list {
   display: flex;
-  align-items: center;
   justify-content: center;
   padding-top: 4px;
   padding-right: 12px;
