@@ -1,20 +1,21 @@
 /* место для вашего кода */
-
+/* *,*::before,*::after {outline: 1px solid red} */
 /* Начало блока Шапка */
 .header {
   display: grid;
-  grid-template-columns: 1fr 130px 1fr;
-  justify-content: space-between;
-  padding: 92px 24px 96px 24px;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 99px 24px 96px 24px;
 }
 
 .header__links-list {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  padding-right: 12px;
   gap: 31px;
   list-style-type: circle;
-  padding-top: 48px;
-  padding-left: 26px;
 }
 
 .header__links-list-item {
@@ -31,30 +32,24 @@
 }
 
 .header__logo {
+  display: block;
   width: 130px;
-  display: grid;
-  align-items: center;
 }
 
 .header__address {
   display: flex;
   flex-direction: column;
-  padding-left: 195px;
-  padding-top: 12px;
+  justify-self: right;
+  width: 266px;
   font-weight: 400;
   font-size: 18px;
   line-height: 135%;
   color: #000;
+  font-style: normal;
 }
 
 .header__address a {
   letter-spacing: 0.01em;
-  font-style: normal;
-}
-
-.header__address p {
-  letter-spacing: 0.01em;
-  font-style: normal;
 }
 
 /* Конец блока Шапка */
@@ -101,8 +96,7 @@
 }
 
 .aligned-text_right {
-  margin-top: 6px;
-  padding-left: 586px;
+  margin-top: 5px;
   text-align: end;
 }
 
@@ -112,13 +106,7 @@
 .no-letter-spacing {
   letter-spacing: normal;
 }
-.no-letter-spacing1 {
-  letter-spacing: 0.3em;
-}
 
-.letter-spacing-extended2 {
-  letter-spacing: 0.3em;
-}
 .cover__description {
   position: relative;
   display: flex;
@@ -166,6 +154,9 @@
 .card-item {
   display: flex;
   flex-grow: 1;
+  width: 334px;
+  background-position: center;
+  background-size: cover;
 }
 .card-list {
   padding-left: 24px;
@@ -177,8 +168,7 @@
 }
 
 .card {
-  width: 334px;
-  height: 563px;
+  min-height: 563px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -191,18 +181,12 @@
 
 .first {
   background-image: url("../images/card-lot-01.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .second {
   background-image: url("../images/card-lot-02.jpg");
-  background-position: center;
-  background-size: cover;
 }
 .third {
   background-image: url("../images/card-lot-03.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .card-title {
@@ -264,7 +248,7 @@
 }
 
 .about-description h2 {
-  margin-top: 133px;
+  margin-top: 131px;
   margin-bottom: 100px;
   font-weight: 700;
   font-size: 40px;
